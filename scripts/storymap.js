@@ -184,7 +184,7 @@ $(window).on('load', function() {
 			style: style,
 			onEachFeature: onEachFeature
 		})
-    geojson.min_zoom = 14;
+    geojson.min_zoom = 12;
     zsh.addLayer(geojson);
 		
 //
