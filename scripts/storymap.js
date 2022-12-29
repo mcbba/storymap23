@@ -161,7 +161,7 @@ $(window).on('load', function() {
 			return {
 				weight: 3,
 				opacity: 1,
-				color: 'black',
+				color: '#3388ff',
 				fillOpacity: 0
 
 			};
