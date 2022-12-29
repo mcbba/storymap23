@@ -83,10 +83,15 @@ $(window).on('load', function() {
   /**
    * Loads the basemap and adds it to the map
    */
-     var basemap = trySetting('_tileProvider', 'Stamen.TonerLite');
-    L.tileLayer.provider(basemap, {
-      maxZoom: 14
-    }).addTo(map);
+//      var basemap = trySetting('_tileProvider', 'Stamen.TonerLite');
+//     L.tileLayer.provider(basemap, {
+//       maxZoom: 14
+//     }).addTo(map);
+L.tileLayer('https://{s}.tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey={apikey}', {
+	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	apikey: 'db5ae1f5778a448ca662554581f283c5',
+	maxZoom: 22
+}).addTo(map);
 	  
 	      L.vectorGrid.protobuf('https://api.maptiler.com/tiles/8bd037ee-2b0c-432d-bc91-23c963c610c2/{z}/{x}/{y}.pbf?key=JboPCNiTUCVWT1YVGWl7', {
   rendererFactory: L.canvas.tile
