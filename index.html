@@ -196,6 +196,7 @@
     zsh.addTo(map);
     var geojson = L.geoJson(data, {
 			style: style,
+	    		onEachFeature: onEachFeature
 		});
     geojson.min_zoom = 12;
     zsh.addLayer(geojson);
