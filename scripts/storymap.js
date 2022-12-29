@@ -92,46 +92,7 @@ $(window).on('load', function() {
 	  //making changes here		
 	  
     L.vectorGrid.protobuf('https://api.maptiler.com/tiles/8bd037ee-2b0c-432d-bc91-23c963c610c2/{z}/{x}/{y}.pbf?key=JboPCNiTUCVWT1YVGWl7', {
-  rendererFactory: L.canvas.tile,
-  token: TOKEN,
-  vectorTileLayerStyles: {
-    // https://www.mapbox.com/vector-tiles/mapbox-streets-v7/
-    landuse: [],
-    waterway: [],
-    water: {
-      fill: true,
-      fillColor: '#F8ED86',
-      stroke: false
-    },
-    aeroway: [],
-    barrier_line: [],
-    building: {
-      fill: true,
-      fillColor: '#F46060',
-      stroke: false
-    },
-    landuse_overlay: [],
-    road: {
-      weight: 1,
-      stroke: true,
-      color: '#112D4E',
-      fill: false
-    },
-    admin: [],
-    country_label: [],
-    marine_label: [],
-    state_label: [],
-    place_label: [],
-    water_label: [],
-    poi_label: [],
-    road_label: [],
-    motorway_junction: [],
-    waterway_label: [],
-    airport_label: [],
-    rail_station_label: [],
-    mountain_peak_label: [],
-    housenum_label: []
-  }
+  rendererFactory: L.canvas.tile
 }).addTo(map);
 
     function style(feature) {
