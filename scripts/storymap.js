@@ -93,7 +93,7 @@ L.tileLayer('https://{s}.tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey={
 	maxZoom: 22
 }).addTo(map);
 	  
-	      L.vectorGrid.protobuf('https://api.maptiler.com/tiles/14ade583-f6d5-45d6-a42f-b016c3b90fbc/{z}/{x}/{y}.pbf?key=VYKZHfAHbvrUBOfOPcrb', {
+	      L.vectorGrid.protobuf('https://api.maptiler.com/tiles/8d511f31-4da6-4a5c-9463-785425d4fc4a/{z}/{x}/{y}.pbf?key=zob62QRWw81o20XSyzYH', {
   rendererFactory: L.canvas.tile
 // 		      ,
 // 		                 vectorTileLayerStyles: {
