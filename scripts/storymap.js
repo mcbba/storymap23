@@ -95,6 +95,15 @@ L.tileLayer('https://{s}.tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey={
 	  
 	      L.vectorGrid.protobuf('https://api.maptiler.com/tiles/8bd037ee-2b0c-432d-bc91-23c963c610c2/{z}/{x}/{y}.pbf?key=JboPCNiTUCVWT1YVGWl7', {
   rendererFactory: L.canvas.tile
+// 		      ,
+// 		                 vectorTileLayerStyles: {
+//     blockgrid: {
+//       weight: 1,
+//       stroke: true,
+//       color: '#112D4E',
+//       fill: false
+//     }
+//            }
 }).addTo(map);
 		
 //
