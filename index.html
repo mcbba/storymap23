@@ -161,8 +161,10 @@
 // 	//end zoom hide
 
     var map = L.map('map', {
+      minZoom: 6,
+      maxZoom: 16,
       center: [0, 0],
-      zoom: 1,
+      zoom: 6,
       scrollWheelZoom: false,
       zoomControl: false,
       tap: false
