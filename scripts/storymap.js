@@ -105,6 +105,10 @@ L.tileLayer('https://{s}.tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey={
 //     }
 //            }
 }).addTo(map);
+	  
+	  L.vectorGrid.protobuf('https://api.maptiler.com/tiles/8bd037ee-2b0c-432d-bc91-23c963c610c2/{z}/{x}/{y}.pbf?key=JboPCNiTUCVWT1YVGWl7', {
+  rendererFactory: L.canvas.tile
+}).addTo(map);
 		
 //
   }
