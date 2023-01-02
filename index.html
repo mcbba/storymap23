@@ -186,7 +186,7 @@
 			sticky: true
 		});
 	}
-	function Tstyle(feature) {
+	function style(feature) {
 		return {
 			opacity: 0,
 			fillOpacity: 0
@@ -201,7 +201,7 @@
 //     geojson.min_zoom = 12;
 //     zsh.addLayer(geojson);
     var tooptip = L.geoJson(data, {
-			style: Tstyle,
+			style: style,
 			onEachFeature: onEachFeature
 		}).addTo(map);
   </script>
