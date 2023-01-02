@@ -83,39 +83,19 @@ $(window).on('load', function() {
   /**
    * Loads the basemap and adds it to the map
    */
-//      var basemap = trySetting('_tileProvider', 'Stamen.TonerLite');
-//     L.tileLayer.provider(basemap, {
-//       maxZoom: 14
-//     }).addTo(map);
-L.tileLayer('https://{s}.tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey={apikey}', {
-	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	apikey: 'db5ae1f5778a448ca662554581f283c5',
-	maxZoom: 22
-}).addTo(map);
+ 
+	L.tileLayer('https://{s}.tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey={apikey}', {
+		attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+		apikey: 'db5ae1f5778a448ca662554581f283c5',
+		maxZoom: 22
+	}).addTo(map);
+
+	L.tileLayer('tiles/{z}/{x}/{y}.png', {
+		maxZoom: 16,
+		minZoom: 6,
+		tms: false
+	}).addTo(map);
 	  
-L.tileLayer('tiles/{z}/{x}/{y}.png', {
-        maxZoom: 16,
-	minZoom: 6,
-        tms: false
-      }).addTo(map);
-	  
-// 	      L.vectorGrid.protobuf('https://api.maptiler.com/tiles/8d511f31-4da6-4a5c-9463-785425d4fc4a/{z}/{x}/{y}.pbf?key=zob62QRWw81o20XSyzYH', {
-//   rendererFactory: L.canvas.tile
-// // 		      ,
-// // 		                 vectorTileLayerStyles: {
-// //    'mcbba.geojson blockgrid': {
-// //       weight: 1,
-// //       stroke: true,
-// //       color: '#112D4E',
-// //       fill: false
-// //     }
-// //            }
-// }).addTo(map);
-	  
-// 	  L.vectorGrid.protobuf('https://api.maptiler.com/tiles/8bd037ee-2b0c-432d-bc91-23c963c610c2/{z}/{x}/{y}.pbf?key=JboPCNiTUCVWT1YVGWl7', {
-//   rendererFactory: L.canvas.tile
-// }).addTo(map);
-		
 //
   }
 
